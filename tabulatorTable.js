@@ -116,7 +116,14 @@ class TabulatorTable extends CommanClass {
   getAjaxResponse(url, params, response) {
     return this.setToThePayloadForPagination(response);
   }
+  /**
+   * 
+   * @returns{[]}
+   */
   getTabulatorColumnData() {
-    return this.#tableData;
+    console.log('====================================');
+    console.log(this.#tableData);
+    console.log('====================================');
+    return this.#tableData.columns;
   }
 }
