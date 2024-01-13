@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- tabulator table -->
+  <link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--tabulator table -->
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.4.3/dist/js/tabulator.min.js"></script>
+<script src="./tableData.js"></script>
+    <script src="./commanClass.js"></script>
+    <script src="./tabulatorTable.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabulatorTable = new TabulatorTable(
+              "example-table",
+              `${URL}/article18/showDataByRole`,
+              tableData
+            );
+          });
+    </script>
+</body>
+</html>
