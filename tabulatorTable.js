@@ -39,6 +39,9 @@ class TabulatorTable extends CommanClass {
     this.#tabulator = this.loadTabulatorTable();
   }
 
+ getTabulator(){
+  return this.#tabulator;
+ }
   getURL() {
     return this.curretUrl;
   }
